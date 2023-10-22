@@ -1,0 +1,139 @@
+{
+  "organizations": [
+    {
+      "id": "AB3CD",
+      "img_url": "https://helpinghandsgroup.org/resources/Pictures/HHF-Logo_RGB_new-tagline.jpg",
+      "name": "Helping Hands Foundation",
+      "location": "New York, NY",
+      "active_opportunity": {
+        "title": "Volunteer at Local Food Bank",
+        "description": "Join us in sorting and distributing food to those in need. Your help can make a difference in the community.",
+        "date": "2023-11-15",
+        "slots_available": 5
+      },
+      "contact_email": "contact@helpinghands.org",
+      "website": "https://www.helpinghands.org",
+      "phone": "+1 (555) 123-4567"
+    },
+    {
+      "id": "E7FJ9",
+      "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi4W1Lk5SBl_gsUVLFbDU0U-x75K-22Suw-6ZxblPc3w&s",
+      "name": "Green Earth Initiative",
+      "location": "Los Angeles, CA",
+      "active_opportunity": {
+        "title": "Tree Planting Event",
+        "description": "Join us in planting trees to make our city greener and combat climate change.",
+        "date": "2023-12-03",
+        "slots_available": 10
+      },
+      "contact_email": "info@greenearthinitiative.org",
+      "website": "https://www.greenearthinitiative.org",
+      "phone": "+1 (555) 987-6543"
+    },
+    {
+      "id": "K2P9L",
+      "img_url": "https://www.shelteranimalscount.org/wp-content/uploads/2022/02/SAC_Logo_RGB_Tagline.png",
+      "name": "Animal Rescue Foundation",
+      "location": "Chicago, IL",
+      "active_opportunity": {
+        "title": "Pet Adoption Event",
+        "description": "Help us find forever homes for adorable shelter animals. Come meet our furry friends!",
+        "date": "2023-11-20",
+        "slots_available": 3
+      },
+      "contact_email": "adopt@animalrescue.org",
+      "website": "https://www.animalrescue.org",
+      "phone": "+1 (555) 567-8901"
+    },
+    {
+      "id": "M5Q2T",
+      "img_url": "https://www.oceanicsociety.org/wp-content/uploads/2021/02/oceanic-society-logo.png",
+      "name": "Clean Oceans Foundation",
+      "location": "Miami, FL",
+      "active_opportunity": {
+        "title": "Beach Cleanup Day",
+        "description": "Join us in cleaning up the beach to protect marine life and preserve our beautiful coastline.",
+        "date": "2023-11-30",
+        "slots_available": 8
+      },
+      "contact_email": "info@cleanoceans.org",
+      "website": "https://www.cleanoceans.org",
+      "phone": "+1 (555) 234-5678"
+    },
+    {
+      "id": "R9K8S",
+      "img_url": "https://static.wixstatic.com/media/83a3ce_a7d890c543ed41008127e0165dd0266d~mv2.png/v1/fill/w_59,h_29,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/TechForGood.png",
+      "name": "Tech for Good",
+      "location": "San Francisco, CA",
+      "active_opportunity": {
+        "title": "Coding Workshop for Kids",
+        "description": "Teach coding to underprivileged children and inspire the next generation of tech enthusiasts.",
+        "date": "2023-11-25",
+        "slots available": 6
+      },
+      "contact_email": "info@techforgood.org",
+      "website": "https://www.techforgood.org",
+      "phone": "+1 (555) 345-6789"
+    },
+    {
+      "id": "P6J3R",
+      "img_url": "https://www.map.org/hubfs/5by5-Assets/map-logo-color.svg",
+      "name": "Medical Relief International",
+      "location": "Houston, TX",
+      "active_opportunity": {
+        "title": "Medical Outreach Mission",
+        "description": "Provide medical care to underserved communities in rural areas. Your skills can save lives.",
+        "date": "2023-12-10",
+        "slots available": 4
+      },
+      "contact_email": "info@medrelief.org",
+      "website": "https://www.medrelief.org",
+      "phone": "+1 (555) 456-7890"
+    },
+    {
+      "id": "L8Z5M",
+      "img_url": "https://d3bl5qcndhcx94.cloudfront.net/rel272-c74b0a4/images/org_profile_avatar@x2.png",
+      "name": "Environmental Warriors",
+      "location": "Seattle, WA",
+      "active_opportunity": {
+        "title": "Wetland Restoration Project",
+        "description": "Restore wetlands to protect wildlife and maintain a balanced ecosystem. Join us in this vital work.",
+        "date": "2023-12-05",
+        "slots available": 7
+      },
+      "contact_email": "volunteer@envwarriors.org",
+      "website": "https://www.envwarriors.org",
+      "phone": "+1 (555) 567-8901"
+    },
+    {
+      "id": "Y4N9P",
+      "img_url": "https://d3bl5qcndhcx94.cloudfront.net/rel272-c74b0a4/images/org_profile_avatar@x2.png",
+      "name": "Youth Empowerment Foundation",
+      "location": "Denver, CO",
+      "active_opportunity": {
+        "title": "Mentoring Program for Teens",
+        "description": "Become a mentor and empower teenagers to achieve their full potential. Make a lasting impact.",
+        "date": "2023-11-18",
+        "slots available": 5
+      },
+      "contact_email": "info@youthempower.org",
+      "website": "https://www.youthempower.org",
+      "phone": "+1 (555) 678-9012"
+    },
+    {
+      "id": "C3K9L",
+      "img_url": "https://d3bl5qcndhcx94.cloudfront.net/rel272-c74b0a4/images/org_profile_avatar@x2.png",
+      "name": "Art for All Foundation",
+      "location": "Boston, MA",
+      "active_opportunity": {
+        "title": "Art Workshop for Children",
+        "description": "Inspire creativity in kids by teaching art. Help them express themselves through artistic activities.",
+        "date": "2023-11-28",
+        "slots available": 8
+      },
+      "contact_email": "artforall@foundation.org",
+      "website": "https://www.artforallfoundation.org",
+      "phone": "+1 (555) 789-0123"
+    }
+  ]
+}

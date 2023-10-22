@@ -12,55 +12,78 @@ import { useRouter } from "expo-router";
 import styles from "./welcome.style";
 import { icons, SIZES } from "../../../constants";
 
-const jobTypes = ["Full-time", "Part-time", "Contractor"];
+// Volunteer opportunity categories displayed after the search bar
+const volunteerTypes = [
+  "Animals",
+  "Community",
+  "Disaster Relief",
+  "Education & Literacy",
+  "Health & Medicine",
+  "Homeless & Housing",
+  "Hunger",
+  "Immigrants & Refugees",
+  "Seniors",
+];
 
 const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
   const router = useRouter();
-  const [activeJobType, setActiveJobType] = useState("Full-time");
+  
+  // Keeps track of which volunteer category is selected
+  const [activeVolunteerType, setActiveVolunteerType] = useState("");
 
   return (
+    // Welcome Message
     <View>
       <View style={styles.container}>
-        <Text style={styles.userName}>Hello Adrian</Text>
-        <Text style={styles.welcomeMessage}>Find your perfect job</Text>
+        <Text style={styles.userName}>Hello Frank</Text>
+        <Text style={styles.welcomeMessage}>
+          Find the best volunteer opportunity
+        </Text>
       </View>
 
+      {/* Search bar */}
       <View style={styles.searchContainer}>
         <View style={styles.searchWrapper}>
           <TextInput
             style={styles.searchInput}
             value={searchTerm}
             onChangeText={(text) => setSearchTerm(text)}
-            placeholder='What are you looking for?'
+            placeholder="What are you looking for?"
           />
         </View>
 
+        {/* Search button */}
         <TouchableOpacity style={styles.searchBtn} onPress={handleClick}>
           <Image
             source={icons.search}
-            resizeMode='contain'
+            resizeMode="contain"
             style={styles.searchBtnImage}
           />
         </TouchableOpacity>
       </View>
 
+      {/* Shows volunteer opportunity categories */}
       <View style={styles.tabsContainer}>
         <FlatList
-          data={jobTypes}
+          data={volunteerTypes} // volunteerTypes declared above
+          // Specifies how each list item looks like
           renderItem={({ item }) => (
+            // Makes list item a button
             <TouchableOpacity
-              style={styles.tab(activeJobType, item)}
+              style={styles.tab(activeVolunteerType, item)}
               onPress={() => {
-                setActiveJobType(item);
+                setActiveVolunteerType(item);
+                // When item is pressed/clicked, it opens the search page for that item
                 router.push(`/search/${item}`);
               }}
             >
-              <Text style={styles.tabText(activeJobType, item)}>{item}</Text>
+              <Text style={styles.tabText(activeVolunteerType, item)}>
+                {item}
+              </Text>
             </TouchableOpacity>
           )}
-          keyExtractor={(item) => item}
-          contentContainerStyle={{ columnGap: SIZES.small }}
-          horizontal
+          keyExtractor={(item) => item} // Extracts unique key, similar to React's `key`
+          contentContainerStyle={styles.tabsContentContainer}
         />
       </View>
     </View>

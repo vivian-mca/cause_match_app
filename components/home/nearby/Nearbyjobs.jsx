@@ -9,22 +9,26 @@ import useFetch from "../../../hook/useFetch";
 
 const Nearbyjobs = () => {
   const router = useRouter();
-  const { data, isLoading, error } = useFetch("search", {
-    query: "React Native developer",
-    num_pages: "1",
-  });
+  // <-- useFetch if fetching data from API -->
+  // const { data, isLoading, error } = useFetch("search", {
+  //   query: "React Native developer",
+  //   num_pages: "1",
+  // });
+
+  const jsonData = require("../../../data/volunteer-opps.json");
 
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>Nearby jobs</Text>
+        <Text style={styles.headerTitle}>Nearby opportunities</Text>
         <TouchableOpacity>
           <Text style={styles.headerBtn}>Show all</Text>
         </TouchableOpacity>
       </View>
 
       <View style={styles.cardsContainer}>
-        {isLoading ? (
+        {/* Uncomment if using API. Adjust value depending on API */}
+        {/* {isLoading ? (
           <ActivityIndicator size='large' color={COLORS.primary} />
         ) : error ? (
           <Text>Something went wrong</Text>
@@ -36,7 +40,7 @@ const Nearbyjobs = () => {
               handleNavigate={() => router.push(`/job-details/${job.job_id}`)}
             />
           ))
-        )}
+        )} */}
       </View>
     </View>
   );

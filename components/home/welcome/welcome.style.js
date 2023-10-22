@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
     fontFamily: FONT.regular,
     fontSize: SIZES.large,
     color: COLORS.secondary,
+    marginBottom: 10,
   },
   welcomeMessage: {
     fontFamily: FONT.bold,
@@ -55,8 +56,18 @@ const styles = StyleSheet.create({
   tabsContainer: {
     width: "100%",
     marginTop: SIZES.medium,
+    // borderWidth: 1,
+    // borderColor: "red" ,
+  },
+  tabsContentContainer: {
+    flexWrap: 'wrap',
+    flexDirection: 'row',
+    columnGap: SIZES.xSmall,
+    rowGap: SIZES.xSmall
   },
   tab: (activeJobType, item) => ({
+    // marginEnd: SIZES.xSmall / 2,
+    // marginBottom: SIZES.xSmall / 2, 
     paddingVertical: SIZES.small / 2,
     paddingHorizontal: SIZES.small,
     borderRadius: SIZES.medium,
